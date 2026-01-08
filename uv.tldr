@@ -1,0 +1,19 @@
+examples = []
+[[hit]]
+title = "uv"
+command = "uv venv --python 3.10.8"
+description = "创建一个 python 3.10.8 的 uv venv 环境"
+
+[[hit]]
+title = "uv"
+command = "uv pip install fastapi"
+description = "自动识别 uv venv 环境，然后 pip 下载"
+
+[[hit]]
+command = "uv pip install -r requirements.txt"
+description = "自动识别 uv venv 并 `pip install -r requirements.txt`"
+
+[meta]
+name = "uv"
+description = "Quick reference for uv"
+url = ""

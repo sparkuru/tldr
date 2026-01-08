@@ -1,0 +1,15 @@
+examples = []
+[[hit]]
+title = "magick"
+command = "magick -resize 256x256 src.png dst.ico"
+description = "resize into 256*256 then convert to ico"
+
+[[hit]]
+title = "magick"
+command = "magick src.webp dst.png"
+description = "convert <webp> to <ico> magically"
+
+[meta]
+name = "magick"
+description = "Quick reference for magick"
+url = ""

@@ -2,3 +2,4 @@ get tldr.py [here](https://github.com/sparkuru/genshin/blob/main/code/python/19-
 
 need pip packages：`pip install argparse toml`
 
+default config dir: `~/.config/tldr/*.tldr`

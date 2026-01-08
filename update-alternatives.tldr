@@ -1,0 +1,40 @@
+[meta]
+name = "update-alternatives"
+description = "管理系统中多个同功能命令版本的符号链接"
+url = "https://man7.org/linux/man-pages/man8/update-alternatives.8.html"
+
+[[examples]]
+title = "列出所有可替代的命令"
+command = "update-alternatives --get-selections"
+description = "显示系统中所有通过 alternatives 管理的命令及其当前状态"
+
+[[examples]]
+title = "显示特定命令的所有可用版本"
+command = "update-alternatives --display {{editor}}"
+description = "显示指定命令（如 editor）的所有可用替代版本及其优先级"
+
+[[examples]]
+title = "交互式配置默认版本"
+command = "sudo update-alternatives --config {{java}}"
+description = "以交互方式选择指定命令（如 java）的默认版本"
+
+[[examples]]
+title = "设置命令为自动模式"
+command = "sudo update-alternatives --auto {{python}}"
+description = "将指定命令（如 python）设置为自动选择最高优先级的版本"
+
+[[examples]]
+title = "手动设置默认版本"
+command = "sudo update-alternatives --set {{editor}} {{/usr/bin/vim}}"
+description = "手动指定命令的默认版本路径"
+
+[[examples]]
+title = "安装新的替代版本"
+command = "sudo update-alternatives --install {{/usr/bin/editor}} {{editor}} {{/usr/bin/nano}} {{40}}"
+description = "注册新的替代命令，参数为：链接路径、命令名、实际路径、优先级"
+
+[[examples]]
+title = "移除替代版本"
+command = "sudo update-alternatives --remove {{editor}} {{/usr/bin/nano}}"
+description = "从 alternatives 系统中移除指定的替代版本"
+
