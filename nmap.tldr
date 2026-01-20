@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "sudo nmap -sU -p 53 192.168.9.9"
+description = "nmap UDP 端口扫描"
+
+[meta]
+name = "nmap"
+description = "Quick reference for nmap"
+url = ""

@@ -1,8 +1,3 @@
-[meta]
-name = "ip"
-description = "管理网络接口和路由的工具"
-url = "https://man7.org/linux/man-pages/man8/ip.8.html"
-
 [[examples]]
 title = "显示帮助信息"
 command = "ip --help"
@@ -76,4 +71,13 @@ description = "显示网络接口的统计信息，包括收发包数量"
 [[examples]]
 title = "显示简洁的接口信息"
 command = "ip -br addr show"
-description = "以简洁格式显示所有接口的 IP 地址信息" 
+description = "以简洁格式显示所有接口的 IP 地址信息"
+
+[[hit]]
+command = "ip route replace default via 192.168.9.1 dev eth0 proto static metric 900"
+description = "修改路由优先级"
+
+[meta]
+name = "ip"
+description = "管理网络接口和路由的工具"
+url = "https://man7.org/linux/man-pages/man8/ip.8.html"

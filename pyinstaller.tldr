@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "pyinstaller --onefile --icon favicon.ico main.py && staticx dist/main binary"
+description = "使用 pyinstaller 打包 python 脚本，输出结果在 dist 下；linux 下还需要通过 staticx 固化动态链接库（pip install pyinstaller staticx）"
+
+[meta]
+name = "pyinstaller"
+description = "Quick reference for pyinstaller"
+url = ""
