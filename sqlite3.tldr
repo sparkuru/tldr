@@ -1,0 +1,25 @@
+examples = []
+[[hit]]
+command = "sqlite3 <sqlite3 db file>"
+description = "打开 sqlite3 db 文件"
+
+[[hit]]
+command = "sqlite> .databases"
+description = "查看 db 里的数据库"
+
+[[hit]]
+command = "sqlite> .tables"
+description = "查看指定数据库里的表名"
+
+[[hit]]
+command = "sqlite> .schema <table name>"
+description = "查看表结构"
+
+[[hit]]
+command = "sqlite> .dump <table name>"
+description = "查看表内容"
+
+[meta]
+name = "sqlite3"
+description = "Quick reference for sqlite3"
+url = ""

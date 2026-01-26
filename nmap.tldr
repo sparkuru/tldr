@@ -1,7 +1,7 @@
 examples = []
 [[hit]]
 command = "sudo nmap -sU -p 53 192.168.9.9"
-description = "nmap UDP 端口扫描"
+description = "nmap UDP 端口扫描, 端口不要设置 1-65535, 因为 UDP 无连接, 只能通过超时来确认状态, 多用于确认单个端口是否开放"
 
 [meta]
 name = "nmap"

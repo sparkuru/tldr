@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa user@host"
+description = "解决有的 ssh-server 版本过老导致的算法不支持问题"
+
+[meta]
+name = "ssh"
+description = "Quick reference for ssh"
+url = ""

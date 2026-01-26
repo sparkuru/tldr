@@ -1,0 +1,14 @@
+examples = []
+
+[[hit]]
+command = "rsync --exclude=decompiled --remove-source-files <src> <dst>"
+description = "rsync 排除文件, 并在同步成功后删除源文件, 由于只删除 file 而不删除 dir, 需要搭配 `find src/ -type d -empty -delete` 使用"
+
+[[hit]]
+command = "rsync -avz --progress <src> <dst>"
+description = "rsync 保留权限, 时间戳, 符号等元素（类似 tar）; 显示详细输出; 传输时压缩数据; 显示每个文件的传输进度"
+
+[meta]
+name = "rsync"
+description = "Quick reference for rsync"
+url = ""
