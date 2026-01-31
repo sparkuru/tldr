@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "ssh -o HostKeyAlgorithms=+ssh-rsa <user>@<host> \"tcpdump -U -s0 -w - -i <remote interface>\" | wireshark -k -i -"
+description = "wireshark 默认不支持一些比较老的 ssh 服务器算法，可以通过 ssh 管道传输 tcpdump 数据实现抓取"
+
+[meta]
+name = "wireshark"
+description = "Quick reference for wireshark"
+url = ""

@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "find / -perm -4000 -type f 2>/dev/null"
+description = "查找设置了 SUID 位的可执行文件，常用于提权"
+
+[meta]
+name = "find"
+description = "Quick reference for find"
+url = ""
