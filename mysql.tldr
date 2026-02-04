@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "mysql -u<username> -p<password> -h<host>"
+description = "标准的 mysql cli 登录语句"
+
+[[hit]]
+command = "mysqldump -u<username> -p<password> --all-databases > dbs.sql"
+description = "导出数据库中所有数据库"
+
+[meta]
+name = "mysql"
+description = "Quick reference for mysql"
+url = ""
