@@ -1,2 +1,57 @@
+examples = []
+[[hit]]
+command = "fd <PATTERN>"
+description = "默认正则、智能大小写找文件（遵守 .gitignore 等）"
+
+[[hit]]
+command = "fd -lL <PATTERN>"
+description = "列出文件的详细信息（类似 ls -l），并跟踪符号链接"
+
+[[hit]]
+command = "fd -u <PATTERN>"
+description = "全盘找，包含隐藏文件与忽略项（-u = --hidden --no-ignore）"
+
+[[hit]]
+command = "fd -tf <PATTERN>"
+description = "只找文件（-td 只找目录，-tl 链接，-tx 可执行，-te 空）"
+
+[[hit]]
+command = "fd -e c -e h -e cpp <PATTERN>"
+description = "按扩展名找，-e 可重复组合多种后缀"
+
+[[hit]]
+command = "fd -g 'CMakeLists.txt'"
+description = "用 glob 精确匹配文件名（不想写正则时用 -g）"
+
+[[hit]]
+command = "fd -p -g '**/.git/config'"
+description = "匹配整条路径（-p），常用于定位深层固定路径"
+
+[[hit]]
+command = "fd -d 2 <PATTERN> path/"
+description = "限制搜索深度，避免在巨目录里挖太深"
+
+[[hit]]
+command = "fd -tf --changed-within 2days"
+description = "按修改时间找最近改动的文件（可配合 -e/-p）"
+
+[[hit]]
+command = "fd -tf -S +100m"
+description = "按大小找大文件（+ 表示至少这么大）"
+
+[[hit]]
+command = "fd -e h -e cpp -x clang-format -i"
+description = "对每个结果执行一次命令（-x），{} 为路径占位符"
+
+[[hit]]
+command = "fd -g 'test_*.py' -X vim"
+description = "把所有结果一次性喂给命令（-X），适合 vim/tar/wc 等"
+
+[[hit]]
+command = "fd -0 <PATTERN> | xargs -0 <cmd>"
+description = "安全管道，-0 用 NUL 分隔，避免空格/换行导致的问题"
+
 [meta]
 name = "fd"
+description = "fd/fdfind 筛选条件与 -x/-X 组合的常用用法"
+url = ""

@@ -30,8 +30,8 @@ description = "手动指定命令的默认版本路径"
 
 [[examples]]
 title = "安装新的替代版本"
-command = "sudo update-alternatives --install {{/usr/bin/editor}} {{editor}} {{/usr/bin/nano}} {{40}}"
-description = "注册新的替代命令，参数为：链接路径、命令名、实际路径、优先级"
+command = "sudo update-alternatives --install {{/path/to/usr/local/elf}} {{command-name}} {{/src/path/to/elf}} {{40}}"
+description = "注册新的替代命令，参数为：目标链接路径、命令名、原文件实际路径、优先级"
 
 [[examples]]
 title = "移除替代版本"
