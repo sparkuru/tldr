@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "pandoc --print-default-data-file reference.docx > template.docx"
+description = "输出 pandoc 内置的 docx template，然后可以基于修改后的 custom-reference.docx 去转换文档"
+
+[[hit]]
+command = "pandoc --from/-f markdown --to/-t docx --reference-doc custom-reference.docx --output output.docx input.md"
+description = "pandoc 基于所给的 docx 文档模版 template.docx，转换所给的 markdown 文件 input.md 为 docx 文件 output.docx"
+
+[meta]
+name = "pandoc"
+description = "Quick reference for pandoc"
+url = ""

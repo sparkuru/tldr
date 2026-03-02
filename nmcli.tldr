@@ -1,0 +1,17 @@
+examples = []
+[[hit]]
+command = "nmcli dev wifi hotspot ifname <wifi interface name> ssid <ap name> password <\"password\">"
+description = "用 nmcli 起一个移动共享热点"
+
+[[hit]]
+command = "nmcli con show"
+description = "查看连接信息"
+
+[[hit]]
+command = "nmcli connection modify <con name> ipv4.addresses 192.168.9.1/24"
+description = "为选定的连接名称指定网段"
+
+[meta]
+name = "nmcli"
+description = "Quick reference for nmcli"
+url = ""
