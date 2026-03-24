@@ -1,6 +1,6 @@
 examples = []
 [[hit]]
-command = "pyinstaller --onefile --icon favicon.ico main.py && staticx dist/main binary"
+command = "pyinstaller --onefile --icon <favicon.ico> <xxxx.py> && staticx <path/to/dist/xxxx> <output_binary_name>"
 description = "使用 pyinstaller 打包 python 脚本，输出结果在 dist 下；linux 下还需要通过 staticx 固化动态链接库（pip install pyinstaller staticx）"
 
 [meta]

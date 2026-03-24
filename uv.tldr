@@ -13,6 +13,11 @@ description = "自动识别 uv venv 环境，然后 pip 下载"
 command = "uv pip install -r requirements.txt"
 description = "自动识别 uv venv 并 `pip install -r requirements.txt`"
 
+[[hit]]
+title = "uv"
+command = "uv init; uv add ipython; uv run ipython"
+description = "快速在当前路径下初始化 uv 环境，添加包，并测试"
+
 [meta]
 name = "uv"
 description = "Quick reference for uv"
