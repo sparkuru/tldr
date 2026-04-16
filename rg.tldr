@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "rg -w <word>"
+description = "rg 全匹配字符"
+
+[meta]
+name = "rg"
+description = "Quick reference for rg"
+url = ""

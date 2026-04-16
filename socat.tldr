@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "socat udp4-recvfrom:<中转机器端口>,fork,reuseaddr udp4-sendto:<目标IP>:<目标端口>"
+description = "在中转机器中通过 socat 执行 udp 报文转发"
+
+[[hit]]
+command = "socat tcp:<中转机器端口>,fork,reuseaddr tcp-sendto:<目标IP>:<目标端口>"
+description = "在中转机器中通过 socat 执行 tcp 报文转发"
+
+[meta]
+name = "socat"
+description = "Quick reference for socat"
+url = ""

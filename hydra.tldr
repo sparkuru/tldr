@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "hydra -l admin -P ./password.txt -s <port> <host> http-get /admin/index.php"
+description = "hydra 爆破 http base 请求"
+
+[meta]
+name = "hydra"
+description = "Quick reference for hydra"
+url = ""
