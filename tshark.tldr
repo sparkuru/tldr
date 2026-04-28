@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "tshark -r <pcap/pcapng file> -V -T fields -e <filter 1> -e <filter 2>"
+description = "用 tshark 读取流量包，打印详细信息，并支持过滤语句"
+
+[[hit]]
+command = "tshark -z io,phs -r <pcap/pcapng file>"
+description = "输出流量包在协议层次结构统计"
+
+[meta]
+name = "tshark"
+description = "Quick reference for tshark"
+url = ""

@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "apt -oAcquire::http::proxy=\"http://198.18.0.1:1080\" -oAcquire::https::proxy=\"http://198.18.0.1:1080\" update"
+description = "临时为 apt 启用代理"
+
+[meta]
+name = "apt"
+description = "Quick reference for apt"
+url = ""
