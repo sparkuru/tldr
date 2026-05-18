@@ -1,9 +1,10 @@
-examples = []
-[[hit]]
-command = "rg -w <word>"
-description = "rg 全匹配字符"
-
 [meta]
 name = "rg"
-description = "Quick reference for rg"
+description = "面向开发者的高速正则文本搜索工具"
 url = ""
+
+examples = []
+
+[[hit]]
+command = "rg -w <word>"
+description = "全词匹配搜索"

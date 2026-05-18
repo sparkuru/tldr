@@ -1,29 +1,30 @@
+[meta]
+name = "sqlite3"
+description = "SQLite 数据库的命令行交互工具"
+url = ""
+
 examples = []
+
 [[hit]]
-command = "sqlite3 <sqlite3 db file>"
-description = "打开 sqlite3 db 文件"
+command = "sqlite3 <db_file>"
+description = "打开 SQLite 数据库文件"
 
 [[hit]]
 command = "sqlite> .databases"
-description = "查看 db 里的数据库"
+description = "查看当前连接的数据库列表"
 
 [[hit]]
 command = "sqlite> .tables"
-description = "查看指定数据库里的表名"
+description = "查看数据库中的所有表名"
 
 [[hit]]
-command = "sqlite> .schema <table name>"
+command = "sqlite> .schema <table>"
 description = "查看表结构"
 
 [[hit]]
-command = "sqlite> .dump <table name>"
+command = "sqlite> .dump <table>"
 description = "查看表内容"
 
 [[hit]]
-command = "sqlite3 sqlite.db .dump | grep \"strings you want to grep\""
-description = "从 sqlite3 数据库中找到想要的字段信息"
-
-[meta]
-name = "sqlite3"
-description = "Quick reference for sqlite3"
-url = ""
+command = "sqlite3 sqlite.db .dump | grep \"<keyword>\""
+description = "从数据库中搜索指定字段信息"

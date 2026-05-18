@@ -1,22 +1,28 @@
+[meta]
+name = "fd"
+description = "fd/fdfind 筛选条件与 -x/-X 组合的常用用法"
+url = ""
+
 examples = []
+
 [[hit]]
-command = "fd <PATTERN>"
+command = "fd <pattern>"
 description = "默认正则、智能大小写找文件（遵守 .gitignore 等）"
 
 [[hit]]
-command = "fd -lL <PATTERN>"
+command = "fd -lL <pattern>"
 description = "列出文件的详细信息（类似 ls -l），并跟踪符号链接"
 
 [[hit]]
-command = "fd -u <PATTERN>"
+command = "fd -u <pattern>"
 description = "全盘找，包含隐藏文件与忽略项（-u = --hidden --no-ignore）"
 
 [[hit]]
-command = "fd -tf <PATTERN>"
+command = "fd -tf <pattern>"
 description = "只找文件（-td 只找目录，-tl 链接，-tx 可执行，-te 空）"
 
 [[hit]]
-command = "fd -e c -e h -e cpp <PATTERN>"
+command = "fd -e c -e h -e cpp <pattern>"
 description = "按扩展名找，-e 可重复组合多种后缀"
 
 [[hit]]
@@ -28,7 +34,7 @@ command = "fd -p -g '**/.git/config'"
 description = "匹配整条路径（-p），常用于定位深层固定路径"
 
 [[hit]]
-command = "fd -d 2 <PATTERN> path/"
+command = "fd -d 2 <pattern> path/"
 description = "限制搜索深度，避免在巨目录里挖太深"
 
 [[hit]]
@@ -48,10 +54,5 @@ command = "fd -g 'test_*.py' -X vim"
 description = "把所有结果一次性喂给命令（-X），适合 vim/tar/wc 等"
 
 [[hit]]
-command = "fd -0 <PATTERN> | xargs -0 <cmd>"
+command = "fd -0 <pattern> | xargs -0 <cmd>"
 description = "安全管道，-0 用 NUL 分隔，避免空格/换行导致的问题"
-
-[meta]
-name = "fd"
-description = "fd/fdfind 筛选条件与 -x/-X 组合的常用用法"
-url = ""

@@ -1,9 +1,10 @@
-examples = []
-[[hit]]
-command = "readelf -h </path/to/elf-file>"
-description = "快速了解 elf 文件格式、属性等信息"
-
 [meta]
 name = "readelf"
-description = "Quick reference for readelf"
-url = ""
+description = "读取和分析 ELF 格式二进制文件信息的工具"
+url = "https://man7.org/linux/man-pages/man1/readelf.1.html"
+
+examples = []
+
+[[hit]]
+command = "readelf -h <elf_file>"
+description = "查看 ELF 文件头信息"

@@ -1,9 +1,10 @@
-examples = []
-[[hit]]
-command = "hydra -l admin -P ./password.txt -s <port> <host> http-get /admin/index.php"
-description = "hydra 爆破 http base 请求"
-
 [meta]
 name = "hydra"
-description = "Quick reference for hydra"
+description = "用于暴力破解网络服务登录凭证的渗透测试工具"
 url = ""
+
+examples = []
+
+[[hit]]
+command = "hydra -l admin -P ./password.txt -s <port> <host> http-get /admin/index.php"
+description = "爆破 HTTP Basic 认证"

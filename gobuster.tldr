@@ -1,0 +1,10 @@
+[meta]
+name = "gobuster"
+description = "用于 Web 目录、文件和 DNS 暴力枚举的渗透测试工具"
+url = ""
+
+examples = []
+
+[[hit]]
+command = "gobuster dir -u http://<host>:<port> -v -t 10 --timeout 5s -w <wordlist> -x html,txt,php -c '<cookie>'"
+description = "扫描 Web 目录和文件"

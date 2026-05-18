@@ -1,3 +1,8 @@
+[meta]
+name = "rsync"
+description = "用于高效同步文件和目录的工具"
+url = "https://man7.org/linux/man-pages/man1/rsync.1.html"
+
 examples = []
 
 [[hit]]
@@ -6,9 +11,4 @@ description = "rsync 排除文件, 并在同步成功后删除源文件, 由于�
 
 [[hit]]
 command = "rsync -avz --progress <src> <dst>"
-description = "rsync 保留权限, 时间戳, 符号等元素（类似 tar）; 显示详细输出; 传输时压缩数据; 显示每个文件的传输进度"
-
-[meta]
-name = "rsync"
-description = "Quick reference for rsync"
-url = ""
+description = "保留权限时间戳等元素同步；显示详细输出和传输进度"

@@ -1,4 +1,10 @@
+[meta]
+name = "netstat"
+description = "显示网络连接、路由表和接口统计信息的工具"
+url = "https://man7.org/linux/man-pages/man8/netstat.8.html"
+
 examples = []
+
 [[hit]]
 command = "netstat -plantu"
 description = "显示进程pid、仅监听状态的项、所有连接、数字格式（不解析主机名）、TCP、UDP"
@@ -6,8 +12,3 @@ description = "显示进程pid、仅监听状态的项、所有连接、数字�
 [[hit]]
 command = "netstat -planev"
 description = "显示进程pid、仅监听状态的项、所有连接、数字格式（不解析主机名）、显示扩展信息（inode, 用户）、详细模式"
-
-[meta]
-name = "netstat"
-description = "Quick reference for netstat"
-url = ""

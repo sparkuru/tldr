@@ -1,15 +1,14 @@
-examples = []
-[[hit]]
-title = "magick"
-command = "magick -resize 256x256 src.png dst.ico"
-description = "resize into 256*256 then convert to ico"
-
-[[hit]]
-title = "magick"
-command = "magick src.webp dst.png"
-description = "convert <webp> to <ico> magically"
-
 [meta]
 name = "magick"
-description = "Quick reference for magick"
+description = "ImageMagick 命令行图像处理工具"
 url = ""
+
+examples = []
+
+[[hit]]
+command = "magick -resize 256x256 <input.png> <output.ico>"
+description = "将图像缩放至 256x256 并转换为 ico 格式"
+
+[[hit]]
+command = "magick <input.webp> <output.png>"
+description = "将 webp 转换为 png 格式"

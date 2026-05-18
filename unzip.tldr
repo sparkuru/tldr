@@ -1,10 +1,10 @@
-examples = []
-[[hit]]
-title = "python3"
-command = "python3 -m zipfile -e ./input.zip output-directory"
-description = "在没有 unzip 等命令的情况下通过 python3 解压 zip 文件"
-
 [meta]
 name = "unzip"
-description = "Quick reference for unzip"
-url = ""
+description = "用于解压 ZIP 格式压缩文件的工具"
+url = "https://man7.org/linux/man-pages/man1/unzip.1.html"
+
+examples = []
+
+[[hit]]
+command = "python3 -m zipfile -e <input.zip> <output_dir>"
+description = "在无 unzip 命令时通过 python3 解压 ZIP 文件"

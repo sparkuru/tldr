@@ -1,9 +1,10 @@
-examples = []
-[[hit]]
-command = "ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa user@host"
-description = "解决有的 ssh-server 版本过老导致的算法不支持问题"
-
 [meta]
 name = "ssh"
-description = "Quick reference for ssh"
-url = ""
+description = "用于远程登录和加密通信的安全 Shell 工具"
+url = "https://man7.org/linux/man-pages/man1/ssh.1.html"
+
+examples = []
+
+[[hit]]
+command = "ssh -oHostKeyAlgorithms=+ssh-rsa -oPubkeyAcceptedAlgorithms=+ssh-rsa <user>@<host>"
+description = "解决有的 ssh-server 版本过老导致的算法不支持问题"
