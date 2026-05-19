@@ -6,9 +6,21 @@ url = ""
 examples = []
 
 [[hit]]
-command = "tshark -r <pcap_file> -V -T fields -e <filter1> -e <filter2>"
-description = "读取流量包并过滤指定字段输出"
+command = "tshark -r <pcap_file> -T <output fmt> -e <output filter1> -e <output filter2>"
+description = "读取流量包并输出每个帧内的指定字段（-e），该方式会处理所有帧，即帧如果存在所给的 filter 则会打印，否则输出空行; -T 的作用是指定输出的格式，可选 fields、json、pdml 等"
+
+[[hit]]
+command = "tshark -r <pcap_file> -Y dhcp -T fields -e ip.src -e ip.dst"
+description = "输出所过滤的 dhcp 报文中，每条报文的 ip.src 和 ip.dst"
+
+[[hit]]
+command = "tshark -r <pcap_file> -Y <filter strings>"
+description = "读取流量包，-Y 即为过滤指定类型的报文，也就是 wireshark gui 顶部的过滤器"
 
 [[hit]]
 command = "tshark -z io,phs -r <pcap_file>"
 description = "输出流量包的协议层次结构统计"
+
+[[hit]]
+command = "tshark -r ./dhcp.pcapng -Y "frame.number >= 157 and frame.number <= 200""
+description = "读取流量包，输出流量包里第 157 - 200 条报文"
