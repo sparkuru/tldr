@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "adb shell pm list packages | grep <pkg name>"
+description = "adb 快速定位某个 apk 包位置"
+
+[[hit]]
+command = "adb shell pm path <pkg name>"
+description = "adb 获取某个 app 包真实路径"
+
+[meta]
+name = "adb"
+description = "Quick reference for adb"
+url = ""
