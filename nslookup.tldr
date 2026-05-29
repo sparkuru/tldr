@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "nslookup -port=8853 google.com 127.0.0.1"
+description = "发起 dns 查询，并指定 dns 服务器的 host 和 port"
+
+[meta]
+name = "nslookup"
+description = "Quick reference for nslookup"
+url = ""

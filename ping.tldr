@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "ping -c <count> -W <timeout> -I <interface> <host>"
+description = "ping 设置次数、超时，并指定网卡"
+
+[meta]
+name = "ping"
+description = "Quick reference for ping"
+url = ""
