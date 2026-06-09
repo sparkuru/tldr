@@ -22,5 +22,5 @@ command = "tshark -z io,phs -r <pcap_file>"
 description = "输出流量包的协议层次结构统计"
 
 [[hit]]
-command = "tshark -r ./dhcp.pcapng -Y "frame.number >= 157 and frame.number <= 200""
+command = "tshark -r ./dhcp.pcapng -Y \"frame.number >= 157 and frame.number <= 200\""
 description = "读取流量包，输出流量包里第 157 - 200 条报文"

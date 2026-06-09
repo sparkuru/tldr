@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "trellis init -u <your id>"
+description = "快速初始化仓库，-u 代表你的身份名称"
+
+[meta]
+name = "trellis"
+description = "Quick reference for trellis"
+url = ""

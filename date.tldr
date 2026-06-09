@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "date -s \"2026-06-05 12:00:00\""
+description = "遇到 linux 系统当前时间不准的情况，需要先手动将时间同步到最近日期，后续可以通过 `ntpdate pool.ntp.org` 自动同步时间"
+
+[meta]
+name = "date"
+description = "Quick reference for date"
+url = ""
