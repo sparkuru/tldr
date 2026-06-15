@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "git check-ignore -v /path/to/a-repo-file"
+description = "检查仓库中某个文件是否被 gitignore 规则忽略"
+
+[meta]
+name = "git"
+description = "Quick reference for git"
+url = ""

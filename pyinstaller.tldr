@@ -1,10 +1,14 @@
+examples = []
+[[hit]]
+command = "pyinstaller --clean --onefile --icon <icon.ico> --name <script name> </path/to/script.py> && staticx <dist/binary> <output_binary>"
+description = "打包 Python 脚本为单文件；Linux 下需 staticx 固化动态链接库"
+
+[[hit]]
+command = "uv run --with pyinstaller --with <package 1> --with <package 2> pyinstaller --onefile --name <app name> </path/to/pyfile>"
+description = "uv 环境下，用 pyinstaller 打包 py 文件，需要指定所有用到的 package"
+
 [meta]
 name = "pyinstaller"
 description = "将 Python 脚本打包为独立可执行文件的工具"
 url = ""
-
 examples = []
-
-[[hit]]
-command = "pyinstaller --onefile --icon <icon.ico> <script.py> && staticx <dist/binary> <output_binary>"
-description = "打包 Python 脚本为单文件；Linux 下需 staticx 固化动态链接库"

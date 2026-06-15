@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "echo \"admin\" | sudo -S id"
+description = "目标机器没有 sshpass 的话，用 echo + sudo -S 可以在命令行传入密码，适用于自动化连接还要提权执行的情况"
+
+[meta]
+name = "echo"
+description = "Quick reference for echo"
+url = ""
