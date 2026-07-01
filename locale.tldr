@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "printf '%s\\n' 'en_SG.UTF-8 UTF-8' 'en_US.UTF-8 UTF-8' 'zh_CN.UTF-8 UTF-8' 'zh_SG.UTF-8 UTF-8' | sudo tee -a /etc/locale.gen && sudo locale-gen && locale"
+description = "解决 `bash: warning: setlocale: LC_ALL: cannot change locale (zh_CN.UTF-8): No such file or directory` 的问题"
+
+[meta]
+name = "locale"
+description = "Quick reference for locale"
+url = ""

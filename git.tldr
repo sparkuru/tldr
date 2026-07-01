@@ -1,7 +1,7 @@
 examples = []
 [[hit]]
 command = "git check-ignore -v /path/to/a-repo-file"
-description = "检查仓库中某个文件是否被 gitignore 规则忽略"
+description = "检查仓库中某个文件是否被 gitignore 规则忽略，若被规则命中，则会返回命中该文件的规则和内容"
 
 [meta]
 name = "git"

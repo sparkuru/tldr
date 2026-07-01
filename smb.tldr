@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "sudo mount -t cifs -o rw,vers=3.0,dir_mode=0775,uid=$UID,gid=$GID,username=\"user\",password=\"password\" //HOST:PORT/PATH /path/to/local/dir"
+description = "在 linux 上挂载远端 smb 目录"
+
+[meta]
+name = "smb"
+description = "Quick reference for smb"
+url = ""
