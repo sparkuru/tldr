@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "dig +trace example.com A"
+description = "追踪某域名的 dns 解析路径"
+
+[[hit]]
+command = "dig +short @8.8.8.8 google.com"
+description = "dig 查询域名，指定 dns"
+
+[meta]
+name = "dig"
+description = "Quick reference for dig"
+url = ""

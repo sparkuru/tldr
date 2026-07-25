@@ -3,6 +3,10 @@ examples = []
 command = "7z a -t7z NAME.7z data/ -v2g -mmt=16 -mx=0"
 description = "用 7z 将数据分包打包（不压缩），每个包 2g"
 
+[[hit]]
+command = "7z a NAME.7z data/ -mhe=on"
+description = "压缩包加密文件目录"
+
 [meta]
 name = "7z"
 description = "Quick reference for 7z"

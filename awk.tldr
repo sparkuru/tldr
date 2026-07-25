@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "ip n | awk -F' ' '{print $1, $NF}'"
+description = "用 awk 处理输出的文本，其中 `-F' '` 表示用空格做分隔符，`{ ... }` 是处理函数，`$1` 表示第一列、`$NF` 表示最后一列"
+
+[meta]
+name = "awk"
+description = "Quick reference for awk"
+url = ""
