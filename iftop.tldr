@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "iftop -i INTERFACE -B"
+description = "查看指定接口的网络 io 情况，且设置单位为 Bytes"
+
+[meta]
+name = "iftop"
+description = "Quick reference for iftop"
+url = ""

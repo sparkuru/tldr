@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "find /etc /home | cpio -o > /tmp/backup.cpio"
+description = "cpio 的优势是可以直接从标准输入获取文件名，然后追加打包到 cpio 格式的压缩包里"
+
+[meta]
+name = "cpio"
+description = "Quick reference for cpio"
+url = ""

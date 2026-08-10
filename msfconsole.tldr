@@ -1,0 +1,17 @@
+examples = []
+[[hit]]
+command = "use auxiliary/scanner/discovery/arp_sweep"
+description = "局域网主机发现"
+
+[[hit]]
+command = "use auxiliary/scanner/portscan/syn"
+description = "端口扫描"
+
+[[hit]]
+command = "use auxiliary/scanner/http/dir_scanner"
+description = "web url dir 扫描"
+
+[meta]
+name = "msfconsole"
+description = "Quick reference for msfconsole"
+url = ""

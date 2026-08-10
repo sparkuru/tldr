@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "CMD | grep -v \"str1\\|str2\\|str3\\|...\""
+description = "grep 反选，排除多个选项"
+
+[meta]
+name = "grep"
+description = "Quick reference for grep"
+url = ""
