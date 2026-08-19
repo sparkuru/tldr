@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "jq -r .data.list[0]"
+description = "取 json 数据中的 {}.data.list[0]，-r 表示去掉引号"
+
+[meta]
+name = "jq"
+description = "Quick reference for jq"
+url = ""

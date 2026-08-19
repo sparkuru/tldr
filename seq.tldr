@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "start=17;n=9;seq -f\"index%g\" \"$start\" \"$((start+n))\""
+description = "利用 seq 快速枚举出往后 n 个数字"
+
+[meta]
+name = "seq"
+description = "Quick reference for seq"
+url = ""

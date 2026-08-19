@@ -7,6 +7,14 @@ description = "检查仓库中某个文件是否被 gitignore 规则忽略，若
 command = "git rm --cached /path/to/file"
 description = "git 不想再继续追踪某个文件，记得将其加入到 .gitigmore"
 
+[[hit]]
+command = "git rm --cached /path/to/the/file_or_dir && git commit --amend --no-edit"
+description = "git add . 时，发现跟踪了一些不想提交的文件，但是又 commit 了，可以用这个方式将其取消跟踪"
+
+[[hit]]
+command = "git restore --staged /path/to/file_or_dir"
+description = "git add . 完，但是还没 commit，可以用这个方式，把不想提交的文件移出暂存区"
+
 [meta]
 name = "git"
 description = "Quick reference for git"
