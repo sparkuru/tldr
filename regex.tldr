@@ -1,0 +1,17 @@
+examples = []
+[[hit]]
+command = "grep -E \"(?<(?:25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)\\.){3}(?:25[0-5]|2[0-4]\\d|1\\d{2}|[1-9]?\\d)(?!\\d)\""
+description = "正则匹配多个 ip 地址"
+
+[[hit]]
+command = "grep -E \"\\bSTRING1\\b\""
+description = "正则匹配单个字串，精确到边界"
+
+[[hit]]
+command = "grep -Ei \"\\b(password|passwd|pwd|pass|secret|token|api[_-]?key|access[_-]?key|private[_-]?key|auth[_-]?token)\\b[[:space:]]*[:=][[:space:]]*[^[:space:];,]{4,}\""
+description = "正则匹配常见凭据泄露的情况"
+
+[meta]
+name = "regex"
+description = "Quick reference for regex"
+url = ""

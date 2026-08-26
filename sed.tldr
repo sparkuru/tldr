@@ -1,7 +1,11 @@
 examples = []
 [[hit]]
-command = "sed -i 's/string-1/strings-2/g' /path/to/file(s)"
-description = "sed 批量将文件中的 strings-1 全部替换成 strings-2"
+command = "sed -i 's/string-1/string-2/g' /path/to/file(s)"
+description = "sed 批量将文件中的 string-1 全部替换成 string-2"
+
+[[hit]]
+command = "find . -type f -exec sed -i 's/string-1/string-2/g' {} +"
+description = "find + sed 批量将当前目录及子目录下所有文件中的 string-1 改成 string-2 "
 
 [meta]
 name = "sed"

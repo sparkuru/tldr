@@ -11,6 +11,10 @@ description = "查找设置了 SUID 位、普通用户可写、归属于 root �
 command = "find / -mtime -3"
 description = "查找最近 3 天内修改过的文件"
 
+[[hit]]
+command = "find / -type f -perm -777"
+description = "查找 777 文件"
+
 [meta]
 name = "find"
 description = "在目录树中递归搜索文件和目录的工具"

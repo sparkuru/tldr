@@ -15,6 +15,10 @@ description = "将 tar 类型的分包合并成一个 tar 包"
 command = "tar -ztvf tarfile.tgz"
 description = "直接查看 tar 文件内容和结构，不解压"
 
+[[hit]]
+command = "tar xvf /path/to/tar -C /output/dir"
+description = "tar 指定解压保存目录"
+
 [meta]
 name = "tar"
 description = "用于创建和管理文件归档包的工具"

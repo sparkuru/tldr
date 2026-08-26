@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "patch -p1 < patchfile.patch"
+description = "应用 patchfile 文件，其中会声明要写入到指定文件，可以手动修改 patch 文件的元信息，实现 patch 的应用"
+
+[meta]
+name = "patch"
+description = "Quick reference for patch"
+url = ""
