@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "sudo loginctl"
+description = "查看所有已登录会话"
+
+[[hit]]
+command = "sudo loginctl terminate-user USERNAME"
+description = "快速终止指定用户所有 session"
+
+[meta]
+name = "loginctl"
+description = "Quick reference for loginctl"
+url = ""

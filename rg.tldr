@@ -1,10 +1,14 @@
+examples = []
+[[hit]]
+command = "rg -w <word>"
+description = "全词匹配搜索"
+
+[[hit]]
+command = "rg --files -g config*"
+description = "类似 fdfind，找到所有 config* 路径"
+
 [meta]
 name = "rg"
 description = "面向开发者的高速正则文本搜索工具"
 url = ""
-
 examples = []
-
-[[hit]]
-command = "rg -w <word>"
-description = "全词匹配搜索"

@@ -1,0 +1,13 @@
+examples = []
+[[hit]]
+command = "openssl rand -hex 32"
+description = "快速生成随机 secret：64 个字符，共 256 bit，常用于 API Secret"
+
+[[hit]]
+command = "openssl rand -base64 32"
+description = "快速生成 Base64"
+
+[meta]
+name = "openssl"
+description = "Quick reference for openssl"
+url = ""

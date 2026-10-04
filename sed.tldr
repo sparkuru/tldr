@@ -7,6 +7,18 @@ description = "sed 批量将文件中的 string-1 全部替换成 string-2"
 command = "find . -type f -exec sed -i 's/string-1/string-2/g' {} +"
 description = "find + sed 批量将当前目录及子目录下所有文件中的 string-1 改成 string-2 "
 
+[[hit]]
+command = "cat /path/to/text/file | sed -n '4p'"
+description = "读取 file 文件，然后用 sed 取第 4 行结果"
+
+[[hit]]
+command = "cat /path/to/text/file | sed -n '3,$p'"
+description = "读取 file 文件，然后用 sed 取第 3 行之后直到最后一行的结果"
+
+[[hit]]
+command = "cat /path/to/text/file | sed -n '2,+5p'"
+description = "读取 file 文件，然后用 sed 取第 2 行、及之后 5 行的结果"
+
 [meta]
 name = "sed"
 description = "Quick reference for sed"

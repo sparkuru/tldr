@@ -1,0 +1,9 @@
+examples = []
+[[hit]]
+command = "cat /path/to/file | cut -d' ' -f1 | xargs -n1 COMMAND"
+description = "-n1，表示每次取 1 行结果，传给后面的 COMMAND 作为参数"
+
+[meta]
+name = "xargs"
+description = "Quick reference for xargs"
+url = ""

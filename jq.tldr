@@ -3,6 +3,10 @@ examples = []
 command = "jq -r .data.list[0]"
 description = "取 json 数据中的 {}.data.list[0]，-r 表示去掉引号"
 
+[[hit]]
+command = "jq -r '.[].id'"
+description = "取类似 [ { ..., id, ... }, { ..., id, ... } ] 列表里的所有 id"
+
 [meta]
 name = "jq"
 description = "Quick reference for jq"

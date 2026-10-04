@@ -8,7 +8,7 @@ command = "ssh -J middle@192.168.9.1 -p2222 target@172.16.7.1"
 description = "通过 ssh jump，将 middle 作为跳板，直接访问 target"
 
 [[hit]]
-command = "ssh -J middle1@192.168.9.1,middle2@172.16.7.1 -p2222 target@10.10.10.1"
+command = "ssh -J middle1@192.168.9.1,middle2@172.16.7.1:10022 -p2222 target@10.10.10.1"
 description = "通过 ssh jump，将 middle1、middle2 作为跳板，直接访问 target"
 
 [[hit]]
